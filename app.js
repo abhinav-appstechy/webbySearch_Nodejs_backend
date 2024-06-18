@@ -535,6 +535,10 @@ app.post("/search-query", async (req, res) => {
   }
 });
 
+app.get("/", (req, res)=>{
+  return res.send("Server is running!!");
+})
+
 app.listen(5000, () => {
   console.log("Server is running at port 5000");
 });
